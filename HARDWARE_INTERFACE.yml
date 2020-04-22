@@ -1,0 +1,53 @@
+HARDWARE_INTERFACE:
+  RS485 :
+    /dev/ttymxc1:
+      BaudRate: 9600
+      WordLenth: 8
+      Parity: None
+      StopBits: 1
+      HardwareFlowControl:
+        WaitForDsrFromSlave: False
+        WaitForCtsFromSlave: False
+        DTRControl: Disable
+        RTSControl: Disable
+    /dev/ttymxc2:
+      BaudRate: 9600
+      WordLenth: 8
+      Parity: None
+      StopBits: 1
+      HardwareFlowControl:
+        WaitForDsrFromSlave: False
+        WaitForCtsFromSlave: False
+        DTRControl: Disable
+        RTSControl: Disable
+    /dev/ttymxc3 :
+      BaudRate: 9600
+      WordLenth: 8
+      Parity: None
+      StopBits: 1
+      HardwareFlowControl:
+        WaitForDsrFromSlave: False
+        WaitForCtsFromSlave: False
+        DTRControl: Disable
+        RTSControl: Disable
+    /dev/ttymxc4:
+      BaudRate: 9600
+      WordLenth: 8
+      Parity: None
+      StopBits: 1
+      HardwareFlowControl:
+        WaitForDsrFromSlave: False
+        WaitForCtsFromSlave: False
+        DTRControl: Disable
+        RTSControl: Disable
+  Ethernet:
+    eth0:
+      address: 192.168.3.210
+      netmask: 255.255.255.0
+      gateway: 192.168.3.1
+      broadcast: 192.168.3.255
+    eth1:
+      address: 192.168.0.232
+      netmask: 255.255.255.0
+      gateway: 192.168.0.1
+      broadcast: 192.168.0.255

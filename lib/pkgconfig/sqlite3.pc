@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/tivacc/iMX6/FCU1101/sqlite-autoconf-3300100/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.30.1
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lm -ldl -lpthread 
+Cflags: -I${includedir}
